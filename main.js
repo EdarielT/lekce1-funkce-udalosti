@@ -17,11 +17,16 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
+
+let ctverecek = document.querySelector('.ctverecek');
+
 function upozorni() {
+  ctverecek.innerHTML = "Gratulace, právě jsi spustila tuto funkci!";
+  ctverecek.style.width = 'max-content';
+  console.log("Gratulace, právě jsi spustila tuto funkci!");
   alert("Gratulace, právě jsi spustila tuto funkci!");
 }
 
-let ctverecek = document.querySelector('.ctverecek');
 
 let zmenaBarvy = () => {
   ctverecek.style.backgroundColor = 'green';
