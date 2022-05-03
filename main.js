@@ -1,7 +1,7 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
-
+let vysledek = document.querySelector("#vysledek");
+vysledek.innerHTML = secti(4, 5);
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
  *
@@ -13,9 +13,16 @@ function secti(a, b) {
   return c;
 }
 
+
 /**
  * Upozorní uživatele při spuštění.
  */
 function upozorni() {
   alert("Gratulace, právě jsi spustila tuto funkci!");
+}
+
+let ctverecek = document.querySelector('.ctverecek');
+
+let zmenaBarvy = () => {
+  ctverecek.style.backgroundColor = 'green';
 }
